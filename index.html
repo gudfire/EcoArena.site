@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco Arena Fitness | Evolua sua Performance</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --eco-green: #2E7D32;
+            --eco-green-light: #66BB6A;
+            --eco-soft-green: #F1F8F1;
+            --eco-orange: #FF8F00;
+            --eco-off-white: #FAFAFA;
+            --eco-gray-light: #F5F5F5;
+            --eco-gray-medium: #9E9E9E;
+        }
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 80px;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--eco-off-white);
+            transition: background-color 0.3s ease;
+        }
+        h1, h2, h3, .font-heading {
+            font-family: 'Montserrat', sans-serif;
+            color: #1a1a1a; /* Evitando o preto puro */
+        }
+        .text-eco-green { color: var(--eco-green); }
+        .bg-eco-green { background-color: var(--eco-green); }
+        .bg-eco-soft-green { background-color: var(--eco-soft-green); }
+        .bg-eco-off-white { background-color: var(--eco-off-white); }
+        .bg-eco-gray-light { background-color: var(--eco-gray-light); }
+        
+        .text-eco-orange { color: var(--eco-orange); }
+        .bg-eco-orange { background-color: var(--eco-orange); }
+
+        /* Custom selection */
+        ::selection {
+            background-color: #C8E6C9;
+            color: #1B5E20;
+        }
+
+        /* Section dividers */
+        .section-divider-top {
+            border-top: 1px solid rgba(0,0,0,0.03);
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/"
+  }
+}
+</script>
+</head>
+<body class="text-zinc-800">
+    <div id="root"></div>
+</body>
+</html>

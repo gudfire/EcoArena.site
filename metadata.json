@@ -1,0 +1,7 @@
+{
+  "name": "Eco Arena Fitness",
+  "description": "Um site premium e moderno para a academia Eco Arena Fitness, focado em conversão e experiência do usuário, utilizando uma paleta de cores verde e preto.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
