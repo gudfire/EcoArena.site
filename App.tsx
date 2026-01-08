@@ -4,6 +4,7 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 import Differentials from './components/Differentials';
 import Services from './components/Services';
+import About from './components/About';
 import Testimonials from './components/Testimonials';
 import InstagramFeed from './components/InstagramFeed';
 import Plans from './components/Plans';
@@ -19,6 +20,7 @@ const App: React.FC = () => {
         <Hero />
         <Differentials />
         <Services />
+        <About />
         <Testimonials />
         <InstagramFeed />
         <Plans />

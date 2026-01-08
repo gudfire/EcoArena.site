@@ -18,7 +18,12 @@ export interface Testimonial {
 export interface Plan {
   id: string;
   name: string;
-  features: string[];
+  profile: string;
+  description: string;
+  price: string;
+  benefits: string[];
+  badge?: string;
+  ctaText: string;
   highlight?: boolean;
 }
 

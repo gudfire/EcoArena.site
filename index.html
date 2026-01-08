@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -10,12 +9,15 @@
     <style>
         :root {
             --eco-green: #2E7D32;
-            --eco-green-light: #66BB6A;
+            --eco-green-deep: #1B5E20;
+            --eco-green-light: #C8E6C9;
             --eco-soft-green: #F1F8F1;
+            --eco-moss: #81C784;
+            --eco-leaf: #4CAF50;
             --eco-orange: #FF8F00;
-            --eco-off-white: #FAFAFA;
-            --eco-gray-light: #F5F5F5;
-            --eco-gray-medium: #9E9E9E;
+            --eco-bg-top: #F3FBF7 ;
+            --eco-bg-mid: #E8F5EE;
+            --eco-bg-end: #DDEFE6;
         }
         html {
             scroll-behavior: smooth;
@@ -23,31 +25,58 @@
         }
         body {
             font-family: 'Inter', sans-serif;
-            background-color: var(--eco-off-white);
-            transition: background-color 0.3s ease;
+            /* Gradiente vertical suave conforme solicitado */
+            background: linear-gradient(
+                to bottom, 
+                var(--eco-bg-top) 10%, 
+                var(--eco-bg-mid) 25%, 
+                var(--eco-bg-mid) 50%, 
+                var(--eco-bg-end) 85%, 
+                var(--eco-bg-top) 100%
+            );
+            background-attachment: scroll;
+            color: #2D3436;
+            margin: 0;
+            min-height: 100vh;
         }
         h1, h2, h3, .font-heading {
             font-family: 'Montserrat', sans-serif;
-            color: #1a1a1a; /* Evitando o preto puro */
+            color: #1a1a1a;
         }
-        .text-eco-green { color: var(--eco-green); }
-        .bg-eco-green { background-color: var(--eco-green); }
-        .bg-eco-soft-green { background-color: var(--eco-soft-green); }
-        .bg-eco-off-white { background-color: var(--eco-off-white); }
-        .bg-eco-gray-light { background-color: var(--eco-gray-light); }
-        
-        .text-eco-orange { color: var(--eco-orange); }
-        .bg-eco-orange { background-color: var(--eco-orange); }
 
         /* Custom selection */
         ::selection {
-            background-color: #C8E6C9;
-            color: #1B5E20;
+            background-color: var(--eco-green-light);
+            color: var(--eco-green-deep);
         }
 
-        /* Section dividers */
-        .section-divider-top {
-            border-top: 1px solid rgba(0,0,0,0.03);
+        /* Fluid Section Transitions - Mantidas transparentes para mostrar o gradiente global */
+        .gradient-white-to-green, 
+        .gradient-green-to-off, 
+        .gradient-eco-hero,
+        .transition-gradient-soft-footer { 
+            background: transparent; 
+        }
+        
+        /* Subtle Green Accents */
+        .eco-border-soft { border-color: rgba(46, 125, 50, 0.08); }
+        .eco-bg-soft { background-color: rgba(46, 125, 50, 0.03); }
+        
+        /* Custom Utilities */
+        .text-shadow-sm { text-shadow: 0 1px 2px rgba(0,0,0,0.05); }
+
+        /* Section Blur Glass Effect - Updated with requested greenish tint */
+        .glass-section {
+            background-color: rgba(249, 252, 250, 0.75);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+        }
+
+        /* Greenish Glass variation for visual rhythm */
+        .glass-section-green {
+            background-color: rgba(241, 248, 244, 0.7);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
         }
     </style>
 <script type="importmap">
@@ -61,7 +90,7 @@
 }
 </script>
 </head>
-<body class="text-zinc-800">
+<body>
     <div id="root"></div>
 </body>
 </html>

@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Instagram } from 'lucide-react';
 import { INSTAGRAM_LINK } from '../constants';
@@ -14,7 +13,7 @@ const InstagramFeed: React.FC = () => {
   ];
 
   return (
-    <section className="py-32 bg-[#FAFAFA] border-y border-zinc-100">
+    <section className="relative py-32 transition-gradient-soft-off border-y border-zinc-100/50">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row md:items-center justify-between mb-16 gap-4">
           <div>

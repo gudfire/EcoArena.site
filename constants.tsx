@@ -25,7 +25,7 @@ export const SERVICES: Service[] = [
     id: 'ritbox-dance',
     title: 'Ritbox & Fit Dance',
     description: 'Combine ritmo, música e diversão em aulas que detonam calorias brincando.',
-    benefits: ['Queima Calórica Extrema', 'Energia Lá no Alto', 'Coordenação e Ritmo'],
+    benefits: ['Queima Calórica Extreme', 'Energia Lá no Alto', 'Coordenação e Ritmo'],
     imageUrl: 'https://images.unsplash.com/photo-1524594152303-9fd13543fe6e?auto=format&fit=crop&q=80&w=800'
   },
   {
@@ -77,36 +77,63 @@ export const TESTIMONIALS: Testimonial[] = [
 
 export const PLANS: Plan[] = [
   {
-    id: 'plano-evolucao',
-    name: 'Plano Evolução',
-    features: [
-      'Musculação Completa',
-      '1 Modalidade Coletiva à escolha',
-      'App de Treino Exclusivo',
-      'Ideal para constância e foco'
+    id: 'eco-basic',
+    name: 'Eco Basic',
+    profile: 'O Primeiro Passo',
+    description: 'Ideal para quem quer começar ou manter constância total.',
+    price: '89,90',
+    benefits: [
+      'Acesso total à academia',
+      'Maquinário High-End',
+      'Plano anual recorrente'
     ],
+    ctaText: 'Matricular no Basic',
   },
   {
-    id: 'plano-performance',
-    name: 'Plano Performance',
-    features: [
-      'Musculação Completa',
-      'Todas as Coletivas (Funcional, Ritbox, Dance, Local)',
-      'Body Pump Incluso',
-      'Ideal para quem busca variedade e intensidade'
+    id: 'eco-plus',
+    name: 'Eco Plus',
+    profile: 'Experiência Wellness',
+    description: 'Para quem busca equilíbrio entre treino e relaxamento.',
+    price: '119,90',
+    badge: 'Mais Equilibrado',
+    benefits: [
+      'Tudo do Eco Basic',
+      'Área Zen 1x semana',
+      'Avaliação por Bioimpedância'
     ],
+    ctaText: 'Matricular no Plus',
+  },
+  {
+    id: 'gold-anual',
+    name: 'Gold (Anual)',
+    profile: 'Foco em Performance',
+    description: 'Orientação completa para quem quer resultados reais.',
+    price: '139,90',
+    badge: 'Mais Popular',
     highlight: true,
+    benefits: [
+      'Tudo do Eco Plus',
+      'Área Zen 1x semana',
+      'Aulas Coletivas Ilimitadas',
+      'Curso EcoFit (Saúde)',
+      'Avaliações físicas periódicas'
+    ],
+    ctaText: 'Garantir Plano Gold',
   },
   {
-    id: 'plano-elite',
-    name: 'Plano Elite Experience',
-    features: [
-      'Acesso Total VIP',
-      'Todas as Modalidades + Jiu-Jitsu',
-      'Uso Ilimitado da Cadeira de Massagem',
-      'Avaliações Periódicas',
-      'Para quem não aceita menos que o topo'
+    id: 'platinum-semestral',
+    name: 'Platinum (Semestral)',
+    profile: 'Elite Eco Arena',
+    description: 'A experiência mais completa da Eco Arena Fitness.',
+    price: '159,90',
+    benefits: [
+      'Academia completa',
+      'Curso EcoFit',
+      'Avaliação física por bioimpedância',
+      'Área Zen 1x semana',
+      'Benefícios exclusivos para membros Platinum'
     ],
+    ctaText: 'Ser Membro Platinum',
   }
 ];
 
@@ -136,5 +163,5 @@ export const DIFFERENTIALS = [
 export const CONTACT_INFO = {
   address: "R. Marinita Gouvêia, 915 - Massagueira, Mal. Deodoro - AL, 57160-000, Brasil",
   hours: "Seg a Sex: 06h às 23h | Sáb: 08h às 14h",
-  phone: "(82) 99999-9999" // Updated to local prefix
+  phone: "(82) 99999-9999"
 };
